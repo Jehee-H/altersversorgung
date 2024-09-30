@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="telefonSymbol">
+    <img class="telefonSVG" src="../../assets/phone-solid.svg"  alt="">
+</div>
+<div class="container">
+    <div class="headerPicture">
+        <img src="../../assets/landingpage_topimage-768x460.jpg" alt="">
+    </div>
+    <div class="precontent infoText">
+        <p class="welcometext">
+            Herzlich willkommen,
+            bei Ihrer Alltagsbegleitung für Senioren und Pflegebedürftige
+        </p>
+        <p class="welcomesubtext">
+            Wir bieten liebevolle und zuverlässige Unterstützung für Senioren und pflegebedürftige Menschen in ihrem
+            Alltag.
+            Ob es um die Begleitung bei Arztbesuchen, Einkaufshilfen oder einfach um Gesellschaft geht wir sind für Sie
+            da.
+        </p>
+    </div>
+    <div class="content">
+        <div class="contentBox contentDienstleistung" id="Dienstleistungen">
+            <h1>Unsere Dienstleistungen</h1>
+            <div class="gridDienstleistungen">
+                <div class="dienstleistungBox" *ngFor="let dienstList of dienstleistungList">
+                    <div class="dienstleistungPic"></div>
+                    <h2>{{ dienstList.topic }}</h2>
+                    <div *ngFor="let item of dienstList.beschreibung">{{ item }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="contentBox contentTeam" id="Team">
+            <h1>Unsere Team</h1>
+            <div class="infoText">
+                Ihr Begleiter: Kompetenz und Erfahrung
+                Mit über 15 Jahren Erfahrung in der Begleitung von Senioren und Pflegebedürftigen sind wir der richtige
+                Ansprechpartner für Sie. Unsere langjährige Erfahrung sorgt dafür, dass Sie sich auf eine zuverlässige,
+                einfühlsame und professionelle Unterstützung verlassen können.
+            </div>
+            <div class="gridDienstleistungen">
+                <div class="dienstleistungBox" *ngFor="let team of teamList">
+                    <div class="dienstleistungPic"></div>
+                    <h2>{{ team.name }}</h2>
+                    <h2>{{ team.alter }}</h2>
+                    <h2>{{ team.stadt }}</h2>
+                    <h2>{{ team.qualifizierung }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class=" contentBox contentKontakt">
+            <h1>Kontaktieren Sie uns</h1>
+            <h1>Telefonnummer: 0157712345678</h1>
+            <h1>E-Mail: google@gmail.com</h1>
+            <h2>Wir freuen uns darauf, Ihnen oder Ihren Angehörigen zur Seite zu stehen und den Alltag gemeinsam zu gestalten.</h2>
+        </div>
+    </div>
+    <div class="Footer">
+
+    </div>
+</div>
