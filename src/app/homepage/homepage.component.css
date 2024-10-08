@@ -1,55 +1,14 @@
+@charset "UTF-8";
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 
 .infoText {
   width: 1000px;
   font-size: larger;
-}
-
-.startContent {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-}
-
-.testContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  background-color: red;
-  height: 90dvh;
-}
-
-.imgHeadlineContainer {
-  width: 500px;
-  height: 800px;
-  background-color: rgb(219, 87, 87);
-}
-
-.imgFront {
-  width: 300px;
-  height: 300px;
-  z-index: 3;
-  background-color: greenyellow;
-}
-
-.imgBack {
-  width: 300px;
-  height: 300px;
-  z-index: 4;
-  background-color: lightblue;
-}
-
-.textAboutMe {
-  background-color: aqua;
-  width: 50%;
 }
 
 .headerPicture {
@@ -60,6 +19,10 @@
   padding: 15px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.content {
+  width: 100%;
 }
 
 .contentBox {
@@ -78,8 +41,9 @@
 .dienstleistungBox {
   width: 250px;
   padding: 15px;
-  border: 1px solid;
   border-radius: 15px;
+  background-color: #d9e6d0;
+  filter: drop-shadow(0px 10px 1px #bebaba);
 }
 
 .contentDienstleistung,
@@ -94,9 +58,20 @@
   padding-top: 120px;
 }
 
-.dienstleistungPic {
+.CenterPicBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darstellungPic {
   background-color: aqua;
   height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 h2 {
@@ -104,10 +79,36 @@ h2 {
 }
 
 .contentKontakt {
+  padding-top: 1px;
+  margin-top: 120px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: greenyellow;
+  height: 100svh;
+  background-image: url("../../assets/alltagsbegleiter.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kontaktBox {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.anotherBox {
+  padding: 0px;
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0px 10px 1px rgba(0, 0, 0, 0.4862745098));
 }
 
 .telefonSymbol {
@@ -116,13 +117,18 @@ h2 {
   height: 60px;
   cursor: pointer;
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 150px;
+  bottom: 70px;
   transition: 0.3s;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.telefonSymbol:hover {
+  background-color: rgb(216, 233, 202);
+  scale: 1.5;
 }
 
 .plsWork {
@@ -137,9 +143,29 @@ h2 {
   position: absolute;
 }
 
-.Footer {
-  background-color: grey;
-  height: 150px;
-  width: 100%;
-  margin-top: 200px;
+.telefonSVG:hover {
+  animation: pulsieren 1.3s infinite;
+}
+
+.teamPic {
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid rgb(167, 167, 167);
+}
+
+@keyframes pulsieren {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Stil für den SVG-Kreis */
+.circle {
+  fill: #3498db;
+  animation: pulsieren 2s infinite;
 }/*# sourceMappingURL=homepage.component.css.map */

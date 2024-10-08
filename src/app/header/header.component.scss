@@ -16,18 +16,52 @@ header {
     justify-content: space-evenly;
     align-items: center;
     border: 1px solid;
-    width: 1356px;
+    max-width: 1250px;
     font-weight: 800;
     font-size: 1.2rem;
     height: 70px;
+    background: #BBD1AB;
+    border-radius: 5px;
+}
+
+.selectables {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hoverSelec {
+    text-decoration: none;
+    padding: 0 .75em;
+    background-color: #BBD1AB;
+    // background-color: aqua;
+    border-radius: 0.25em;
+    transition: 300ms background-color ease-in-out;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hoverSelec:hover {
+    background-color: rgb(190, 230, 205);
+}
+
+
+.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
 }
 
 .menuBar a {
-    border-radius: 2px black;
+    transition: background-color 0.3s ease;
+    /* Transition nur für background-color */
     text-decoration: none;
     color: black;
-
 }
+
 
 .header {
     display: flex;
@@ -40,15 +74,34 @@ h1 {
     text-align: center;
 }
 
-.sticky {
-    position: fixed;
-    width: 1500px;
-    z-index: 1000;
-    top: 20px;
-    background-color: white;
-}
-
 .placeHolder {
     height: 70px;
     width: 100px;
+}
+
+.logo {
+    display: none;
+    font-size: 1.7rem;
+    padding: 1em 1.5em;
+}
+
+.showLogo {
+    display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+    .menuBar{
+        width: 950px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+        padding: 1em 1.5em;
+    }
+
+    .hoverSelec {
+        text-decoration: none;
+        padding: 0em .5em;
+    }
 }

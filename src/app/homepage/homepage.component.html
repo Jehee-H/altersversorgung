@@ -1,12 +1,14 @@
 <app-header></app-header>
-<div class="telefonSymbol">
-    <img class="telefonSVG" src="../../assets/phone-solid.svg"  alt="">
-</div>
+<a href="#Kontakt" class="telefonSymbol">
+    <img class="telefonSVG" src="../../assets/phone-solid.svg" alt="">
+</a>
 <div class="container">
     <div class="headerPicture">
         <img src="../../assets/landingpage_topimage-768x460.jpg" alt="">
     </div>
+
     <div class="precontent infoText">
+
         <p class="welcometext">
             Herzlich willkommen,
             bei Ihrer Alltagsbegleitung für Senioren und Pflegebedürftige
@@ -23,7 +25,9 @@
             <h1>Unsere Dienstleistungen</h1>
             <div class="gridDienstleistungen">
                 <div class="dienstleistungBox" *ngFor="let dienstList of dienstleistungList">
-                    <div class="dienstleistungPic"></div>
+                    <div class="CenterPicBox">
+                        <img class="darstellungPic dienstleistungPic" src="../../assets/services/{{dienstList.bild}}" alt="">
+                    </div>
                     <h2>{{ dienstList.topic }}</h2>
                     <div *ngFor="let item of dienstList.beschreibung">{{ item }}</div>
                 </div>
@@ -39,22 +43,31 @@
             </div>
             <div class="gridDienstleistungen">
                 <div class="dienstleistungBox" *ngFor="let team of teamList">
-                    <div class="dienstleistungPic"></div>
-                    <h2>{{ team.name }}</h2>
-                    <h2>{{ team.alter }}</h2>
-                    <h2>{{ team.stadt }}</h2>
-                    <h2>{{ team.qualifizierung }}</h2>
+                    <div class="CenterPicBox">
+                        <img class="darstellungPic teamPic" src="../../assets/mitarbeiter/{{team.bild}}" alt="">
+                    </div>
+                    <h2>Name: {{ team.name }}</h2>
+                    <h2>Alter: {{ team.alter }}</h2>
+                    <h2>Ort: {{ team.stadt }}</h2>
+                    <h2>Qualifizierung: {{ team.qualifizierung }}</h2>
                 </div>
             </div>
         </div>
-        <div class=" contentBox contentKontakt">
-            <h1>Kontaktieren Sie uns</h1>
-            <h1>Telefonnummer: 0157712345678</h1>
-            <h1>E-Mail: google@gmail.com</h1>
-            <h2>Wir freuen uns darauf, Ihnen oder Ihren Angehörigen zur Seite zu stehen und den Alltag gemeinsam zu gestalten.</h2>
+        <div class="contentKontakt">
+            
+
+            <div class="kontaktBox" id="Kontakt">
+
+                <div class="anotherBox">
+                    <h1>Kontaktieren Sie uns</h1>
+                    <h1>Telefonnummer: 01577 12345678</h1>
+                    <h1>E-Mail: google&#64;gmail.com </h1>
+                    <h2>Wir freuen uns darauf, Ihnen oder Ihren Angehörigen zur Seite zu stehen und den Alltag gemeinsam zu
+                        gestalten.</h2>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="Footer">
-
-    </div>
 </div>
+<app-footer></app-footer>

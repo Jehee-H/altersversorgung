@@ -14,32 +14,39 @@ export class HomepageComponent implements OnInit {
 
   public teamList = [
     {
-      bild: '',
-      name: 'Pesron 1',
+      bild: 'Person1.jpg',
+      name: 'Stock',
       alter: '23',
       stadt: 'GIEßEN',
       qualifizierung: 'ist nett'
     },
     {
-      bild: '',
-      name: 'Pesron 2',
-      alter: '23',
-      stadt: 'GIEßEN',
-      qualifizierung: 'ist nett'
+      bild: 'Person2.jpg',
+      name: 'Lamar',
+      alter: '5',
+      stadt: 'Unter Drakes Bett',
+      qualifizierung: 'beschutzt Sie vor Pedos'
     },
     {
-      bild: '',
-      name: 'Pesron 3',
-      alter: '23',
-      stadt: 'GIEßEN',
-      qualifizierung: 'ist nett'
+      bild: 'Person3.jpg',
+      name: 'Manuel',
+      alter: '69',
+      stadt: 'Deutschland',
+      qualifizierung: 'Engels Stimme'
     },
     {
-      bild: '',
-      name: 'Pesron 4',
+      bild: 'Person4.png',
+      name: 'Zorro',
       alter: '23',
-      stadt: 'GIEßEN',
-      qualifizierung: 'ist nett'
+      stadt: 'Sunny',
+      qualifizierung: 'traniert Sie im Schwertkampf'
+    },
+    {
+      bild: 'Person5.jpg',
+      name: 'Kimmy',
+      alter: '40',
+      stadt: 'Nord Korea',
+      qualifizierung: 'hat Raketen'
     }
   ]
 
@@ -51,7 +58,8 @@ export class HomepageComponent implements OnInit {
         'Begleitung bei Spaziergängen',
         'Spiele spielen oder gemeinsame Freizeitaktivitäten',
         'Vorlesen von Büchern oder Zeitungen'
-      ]
+      ],
+      bild: 'Begleitung_und_Gesellschaft.png',
     },
     {
       topic: 'Einkaufs- und Besorgungshilfen',
@@ -59,7 +67,8 @@ export class HomepageComponent implements OnInit {
         'Begleitung oder Übernahme des Einkaufs',
         'Besorgung von Medikamenten oder anderen wichtigen Dingen',
         'Begleitung bei Behördengängen oder Bankbesuchen'
-      ]
+      ],
+      bild: 'Einkaufs_und_Besorgungshilfen.jpg',
     },
     {
       topic: 'Medizinische Fahrten',
@@ -67,7 +76,8 @@ export class HomepageComponent implements OnInit {
         'Fahrten zu Arztterminen, Dialyse oder Physiotherapie',
         'Abholung und Rücktransport nach medizinischen Terminen',
         'Unterstützung beim Organisieren von regelmäßigen Fahrten zu medizinischen Einrichtungen'
-      ]
+      ],
+      bild: 'Medizinische_Fahrten.png'
     },
     {
       topic: 'Haushaltshilfe',
@@ -75,7 +85,8 @@ export class HomepageComponent implements OnInit {
         'Unterstützung bei leichten Hausarbeiten (Staubsaugen, Wäsche waschen)',
         'Zubereitung von Mahlzeiten oder Hilfe beim Kochen',
         'Hilfe bei der Organisation des Haushalts (z.B. Rechnungen sortieren)'
-      ]
+      ],
+      bild: 'haushaltshilfe.jpg',
     },
     {
       topic: 'Pflegeunterstützende Tätigkeiten',
@@ -83,7 +94,8 @@ export class HomepageComponent implements OnInit {
         'Erinnerung an die Einnahme von Medikamenten',
         'Unterstützung bei der Körperpflege (Waschen, Anziehen)',
         'Hilfe beim Aufstehen oder zu Bett gehen'
-      ]
+      ],
+      bild: 'Pflegeunterstützende_Tatigkeiten.jpg',
     },
     {
       topic: 'Freizeitgestaltung',
@@ -91,7 +103,8 @@ export class HomepageComponent implements OnInit {
         'Planung von Ausflügen oder kulturellen Aktivitäten',
         'Begleitung bei Besuchen von Freunden oder Verwandten',
         'Teilnahme an Veranstaltungen oder religiösen Feiern'
-      ]
+      ],
+      bild: 'Freizeitgestaltung.jpg',
     },
     {
       topic: 'Organisation und Koordination',
@@ -99,7 +112,8 @@ export class HomepageComponent implements OnInit {
         'Unterstützung bei der Terminplanung',
         'Kontaktpflege zu Ärzten, Therapeuten oder Pflegepersonal',
         'Koordination von Pflege- und Betreuungsdiensten'
-      ]
+      ],
+      bild: 'haushaltshilfe.jpg',
     },
     {
       topic: 'Emotionale Unterstützung',
@@ -107,21 +121,24 @@ export class HomepageComponent implements OnInit {
         'Zuhören und da sein, wenn Sorgen oder Ängste bestehen',
         'Unterstützung bei Trauer oder Einsamkeit',
         'Förderung von sozialen Kontakten und Integration'
-      ]
+      ],
+      bild: 'Emotionale_Unterstutzung.jpg',
     },
     {
       topic: 'Mobilitätsunterstützung',
       beschreibung: [
         'Begleitung bei Spaziergängen, auch mit Rollstuhl oder Rollator',
         'Unterstützung bei der Nutzung öffentlicher Verkehrsmittel'
-      ]
+      ],
+      bild: 'Mobilitatsunterstutzung.jpg',
     },
     {
       topic: 'Beratung und Hilfestellung',
       beschreibung: [
         'Beratung bei der Beantragung von Pflegeleistungen oder sonstigen Ansprüchen',
         'Unterstützung bei der Auswahl und Organisation weiterer Pflegedienste'
-      ]
+      ],
+      bild: 'Beratung_und_Hilfestellung.jpg',
     }
   ];
 
