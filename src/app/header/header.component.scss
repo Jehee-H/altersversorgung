@@ -7,8 +7,6 @@ header {
     font-size: 6em;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
-
 }
 
 .menuBar {
@@ -17,6 +15,7 @@ header {
     align-items: center;
     border: 1px solid;
     max-width: 1250px;
+
     font-weight: 800;
     font-size: 1.2rem;
     height: 70px;
@@ -80,8 +79,7 @@ h1 {
 }
 
 .logo {
-    display: none;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 1em 1.5em;
 }
 
@@ -89,19 +87,104 @@ h1 {
     display: block;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .menuBar{
-        width: 950px;
+        max-width: 950px;
         font-size: 1rem;
     }
 
-    .logo {
-        font-size: 1.7rem;
-        padding: 1em 1.5em;
+
+
+    .hoverSelec {
+        text-decoration: none;
+        padding: 0em .7em;
     }
+}
+
+@media (max-width: 923px) {
+
+    .headline{
+        font-size: 3.3rem;
+    }
+
+    .menuBar{
+        max-width: 950px;
+        font-size: 0.9rem;
+    }
+
 
     .hoverSelec {
         text-decoration: none;
         padding: 0em .5em;
     }
+}
+
+@media (max-width: 660px) {
+    .selectables{
+        display: none;
+    }
+
+    .menuBar{
+        top:0;
+        width: 100%;
+    }
+
+}
+
+.hamburgerMenu {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+
+    .line {
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: white;
+        border-radius: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.iconPartI {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.iconPartII {
+    top: 13px;
+    left: 0px;
+    opacity: 1;
+}
+
+.iconPartIII {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.iconPartI.active {
+    transform: rotate(45deg);
+    top: 13px;
+
+}
+
+.iconPartII.active {
+    opacity: 0;
+}
+
+.iconPartIII.active {
+    transform: rotate(-45deg);
+    bottom: 17px;
+
 }

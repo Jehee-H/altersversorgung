@@ -129,6 +129,7 @@ h2 {
 .telefonSymbol:hover {
   background-color: rgb(216, 233, 202);
   scale: 1.5;
+  animation: pulsieren 1.3s infinite;
 }
 
 .plsWork {
@@ -141,10 +142,6 @@ h2 {
   width: 55%;
   height: 55%;
   position: absolute;
-}
-
-.telefonSVG:hover {
-  animation: pulsieren 1.3s infinite;
 }
 
 .teamPic {

@@ -9,10 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent},
-
+  { path: 'datenschutz', component: DatenschutzComponent},
+  { path: 'impressum', component: ImpressumComponent},
 ];
 
 
@@ -21,7 +24,9 @@ const appRoutes: Routes = [
     AppComponent,
     HomepageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DatenschutzComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
